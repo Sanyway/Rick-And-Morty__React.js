@@ -1,0 +1,203 @@
+.App {
+    color: #E5E5E5;
+    display: grid;
+    justify-content: center;
+    background-color: #1b1d38;
+    max-width: 1100px;
+
+}
+
+.img-front {
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 15px;
+    position: absolute;
+    justify-self: center;
+    top: 100px;
+    font-size: 70px;
+    color: rgb(95, 226, 55);
+    text-shadow: 5px 5px rgb(19, 19, 43);
+
+}
+
+
+.find-location{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(37, 9, 9);
+}
+
+.form li {
+    padding-left: 4px;
+}
+
+.form li:hover {
+    cursor: pointer;
+    background-color: #E5E5E5;
+    color: black;
+}
+
+#find {
+    height: 40px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.836);
+    
+}
+
+::placeholder { 
+    
+    color: black; 
+}
+
+.button-find {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 2px solid #1b1d38;
+    
+    
+
+}
+
+.location-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.location {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(185, 175, 161);
+
+
+}
+
+.location-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.location-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    font-size: 20px;
+
+}
+
+.location-item {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+}
+
+.card {
+    background-color: rgb(19, 19, 43);
+    color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.card-header {
+    position: relative;
+
+}
+
+.card-circle {
+    width: 14px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Dead {
+    background-color: red;
+}
+
+.unknown {
+    background-color: rgb(180, 166, 166);
+}
+
+.Alive {
+    background-color: green;
+}
+
+.card-status {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    background-color: rgb(19, 19, 43);
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.card-body {
+    padding: 20px;
+    background-color: rgb(19, 19, 43);
+
+
+}
+
+.card-name {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+
+}
+
+.card-list {
+    display: grid;
+    gap: 14px;
+
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 500;
+
+}
+
+.card-span {
+    color: rgb(185, 175, 161);
+    transform: translateX(10px);
+}
