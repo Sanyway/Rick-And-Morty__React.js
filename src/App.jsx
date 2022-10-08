@@ -15,6 +15,7 @@ function App() {
   const [findInput, setFindInput] = useState()
   const [suggestList, setSuggestList] = useState()
   const [hasError, setHasError] = useState(false)
+  const [stopProps, setStopProps] = useState(false)
 
 
   useEffect(() => {
@@ -51,22 +52,28 @@ function App() {
   }
 
 
+  const stopLi= () => {
+    setStopProps(false)
+}
 
-
+const runLi = (event) => {
+event.stopPropagation()
+setStopProps(true)
+}
 
 
   return (
-    <div className="App">
+    <div onClick={stopLi} className="App">
       <img className='img-front' src={frontPage} alt="" />
       <h1 className='title'>Rick And Morty</h1>
       <div className='find-location'>
-        <form className='form' onSubmit={handleSubmit}>
+        <form onClick={runLi} className='form' onSubmit={handleSubmit}>
           <input
             id='find'
             placeholder='Type location id' type="text" onChange={handleChange}
           />
           <button className='button-find'>Find</button>
-          <FilterList
+          <FilterList stopProps={stopProps}
             suggestList={suggestList} setFindInput={setFindInput} />
         </form>
       </div>
