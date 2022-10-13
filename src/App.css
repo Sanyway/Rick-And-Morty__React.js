@@ -4,12 +4,15 @@
     justify-content: center;
     background-color: #1b1d38;
     max-width: 1100px;
+    overflow: hidden;
 
 }
 
 .img-front {
-    align-items: center;
-    width: 100%;
+    
+    justify-self: center;
+    width: 100vh;
+    
 }
 
 .title {
@@ -25,12 +28,12 @@
 }
 
 
-.find-location{
+.find-location {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .form {
@@ -42,16 +45,16 @@
     position: absolute;
     z-index: 1;
     top: 260px;
-    
-    
-    
-    
+
+
+
+
 }
 
 .form li {
     padding-left: 4px;
     background-color: #303246;
-    
+
 }
 
 .form li:hover {
@@ -67,12 +70,12 @@
     font-size: 20px;
     text-align: center;
     background-color: rgba(240, 248, 255, 0.836);
-    
+
 }
 
-::placeholder { 
-    
-    color: black; 
+::placeholder {
+
+    color: black;
 }
 
 .button-find {
@@ -81,8 +84,8 @@
     font-size: 20px;
     font-weight: bold;
     border-left: 2px solid #1b1d38;
-    
-    
+
+
 
 }
 
@@ -210,4 +213,22 @@
 .card-span {
     color: rgb(185, 175, 161);
     transform: translateX(10px);
+}
+
+@media (max-width: 940px) {
+
+    .title {
+        font-size: 50px;
+    }
+
+    .form {
+        top: 230px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    .img-front {
+        
+    }
 }
